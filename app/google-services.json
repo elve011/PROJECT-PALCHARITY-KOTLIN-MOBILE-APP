@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "170374472915",
+    "project_id": "palcharity-e316b",
+    "storage_bucket": "palcharity-e316b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170374472915:android:5504bde40fb6f72b74e026",
+        "android_client_info": {
+          "package_name": "com.example.palcharity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHbZhgwB7G_P5-kMj5RlytaYOvX1vsr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

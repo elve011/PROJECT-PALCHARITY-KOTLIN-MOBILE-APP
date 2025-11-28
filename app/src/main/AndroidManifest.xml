@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.palcharity">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="29"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PalCharity">
+
+        <!-- 🗺️ Clé API Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="TA_CLE_API_GOOGLE_MAPS_ICI" />
+
+        <!-- 🚀 Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PalCharity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Autres activités -->
+        <activity android:name=".ui1.auth.SignInActivity" android:exported="true" />
+        <activity android:name=".ui1.auth.SignUpActivity" android:exported="true" />
+        <activity android:name=".ui1.donor.DonorHomeActivity" android:exported="true" />
+        <activity android:name=".ui1.donor.HistoryActivity" android:exported="true" />
+        <activity android:name=".ui1.donor.DonationActivity" android:exported="true" />
+        <activity android:name=".ui1.association.AssociationDashboardActivity" android:exported="true" />
+        <activity android:name=".ui1.association.ProjectsAffectedActivity" android:exported="true" />
+
+    </application>
+
+</manifest>
